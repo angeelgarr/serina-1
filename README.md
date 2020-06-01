@@ -1,22 +1,22 @@
-Serina | GitHub page [here](https://foxdog05000.github.io/serina/)
+Serina | GitHub page [here](https://orn-fox.github.io/serina-1/)
 ======
 
 [![Build Status](https://travis-ci.org/foxdog05000/serina.svg?branch=master)](https://travis-ci.org/foxdog05000/serina)
-[![License](https://img.shields.io/badge/license-MIT-blue.svg?style=flat)](https://github.com/foxdog05000/serina/blob/master/LICENSE)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg?style=flat)](https://github.com/ORN-Fox/serina-1/blob/master/LICENSE)
 [![Built with Grunt](https://cdn.gruntjs.com/builtwith.svg)](https://gruntjs.com/)
 
 > GUI for create translation files for i18next
 
-## 🖼 Preview (_Serina R0.2.3_)
+## 🖼 Preview (_Serina R0.3.0_)
 
-![Serina Screenshot Home](https://raw.githubusercontent.com/foxdog05000/serina/master/samples/home.jpg)
-![Serina Screenshot Edit translations](https://raw.githubusercontent.com/foxdog05000/serina/master/samples/edit-translation.jpg)
-![Serina Screenshot View json](https://raw.githubusercontent.com/foxdog05000/serina/master/samples/view-json.jpg)
-![Serina Screenshot Settings](https://raw.githubusercontent.com/foxdog05000/serina/master/samples/settings.jpg)
+![Serina Screenshot Home](https://raw.githubusercontent.com/ORN-Fox/serina-1/master/samples/home.jpg)
+![Serina Screenshot Edit translations](https://raw.githubusercontent.com/ORN-Fox/serina-1/master/samples/edit-translation.jpg)
+![Serina Screenshot View json](https://raw.githubusercontent.com/ORN-Fox/serina-1/master/samples/view-json.jpg)
+![Serina Screenshot Settings](https://raw.githubusercontent.com/ORN-Fox/serina-1/master/samples/settings.jpg)
 
 ## 💾 Download
 
-Serina can be downloaded [here](https://github.com/foxdog05000/serina/releases). Available versions for Linux and Windows (64bits). _MacOS available to later_
+Serina can be downloaded [here](https://github.com/ORN-Fox/serina-1/releases). Available versions for Linux and Windows (64bits). _MacOS available to later_
 
 To use, unzip in the desired location and execute Serina.
 
@@ -102,7 +102,7 @@ Clone/download source code from the github repo. Make sure you have _node_, _npm
 
 ## 📖 License
 
-Serina is being developed and maintained as Open-Source software by @foxdog05000 (https://github.com/foxdog05000) licensed under [MIT LICENSE](https://github.com/foxdog05000/serina/blob/master/LICENSE)
+Serina is being developed and maintained as Open-Source software by @ORN-Fox (https://github.com/ORN-Fox) licensed under [MIT LICENSE](https://github.com/ORN-Fox/serina-1/blob/master/LICENSE)
 
 ## 📝 Source Code
-The original source code can be found at: <https://github.com/foxdog05000/serina>
+The original source code can be found at: <https://github.com/ORN-Fox/serina-1>
