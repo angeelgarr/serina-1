@@ -234,7 +234,6 @@ module.exports = function (grunt) {
           '<%= yeoman.dist %>/scripts/{,*/}*.js',
           '<%= yeoman.dist %>/views/{,*/}*.css',
           '<%= yeoman.dist %>/images/{,*/}*.{png,jpg,jpeg,gif,webp,svg}',
-          '!<%= yeoman.dist %>/images/flags/*',
           '<%= yeoman.dist %>/views/fonts/*'
         ]
       }
@@ -460,6 +459,7 @@ module.exports = function (grunt) {
             'serve-static/**',
             'setprototypeof/**',
             'statuses/**',
+            'svg-country-flags/**',
             'type-is/**',
             'unpipe/**',
             'utils-merge/**',

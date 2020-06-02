@@ -8,7 +8,7 @@
             </md-card-title-text>
             <md-card-title-media>
                 <div class="md-media-sm card-media">
-                    <img ng-src="images/flags/{{language.code}}.png" alt="Flag {{language.code}}" class="md-whiteframe-2dp" />
+                    <img ng-src="node_modules/svg-country-flags/svg/{{language.code.slice(-2).toLowerCase()}}.svg" alt="Flag {{language.code}}" class="md-whiteframe-2dp" />
                 </div>
             </md-card-title-media>
         </md-card-title>
@@ -31,7 +31,7 @@
     <div class="md-whiteframe-2dp">
         <md-subheader ng-if="listLanguages.length > 0"><span ng-i18next="[i18next]({ count: listLanguages.length})commons.language"></span></md-subheader>
         <md-list-item ng-repeat="language in listLanguages track by language.code" ng-click="openLanguage(language.code)">
-            <img ng-src="images/flags/{{language.code}}.png" alt="Flag {{language.code}}" class="flag"/> <span>{{language.code}}</span>
+            <img ng-src="node_modules/svg-country-flags/svg/{{language.code.slice(-2).toLowerCase()}}.svg" alt="Flag {{language.code}}" class="flag"/> <span>{{language.code}}</span>
             <span flex></span>
             <span>{{language.nbTranslations}} <span ng-i18next="[i18next]({ count: language.nbTranslations})commons.translation" class="lowercase"></span></span>
             <btn-download-language locale="language.code"></btn-download-language>

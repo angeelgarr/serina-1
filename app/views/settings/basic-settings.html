@@ -9,7 +9,7 @@
 <md-list-item>
     <p>{{'pages.settings.basic.choiceLanguageOfApp' | i18next}}</p>
     <md-button ng-repeat="language in $ctrl.languages" ng-class="{'md-raised md-primary': $root.settings.locale === language.code}" ng-click="$ctrl.changeLocaleOfApplication(language.code)">
-        <img ng-src="images/flags/{{language.code}}.png" alt="" class="flag"/> {{language.code}}
+        <img ng-src="node_modules/svg-country-flags/svg/{{language.code.slice(-2).toLowerCase()}}.svg" alt="" class="flag"/> {{language.code}}
     </md-button>
 </md-list-item>
 
