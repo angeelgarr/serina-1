@@ -8,19 +8,19 @@ angular.module('serinaApp').factory('DataAccessor', function ($rootScope, $http)
     },
 
     openLanguage: function (language) {
-      return $http.get($rootScope.endPoint + '/language/' + language.toLowerCase() + '/open')
+      return $http.get($rootScope.endPoint + '/language/' + language + '/open')
     },
 
     downloadLanguage: function (language) {
-      return $http.get($rootScope.endPoint + '/language/' + language.toLowerCase() + '/download')
+      return $http.get($rootScope.endPoint + '/language/' + language + '/download')
     },
 
     addLanguage: function (language) {
-      return $http.get($rootScope.endPoint + '/language/' + language.toLowerCase() + '/create')
+      return $http.get($rootScope.endPoint + '/language/' + language + '/create')
     },
 
     deleteLanguage: function (language) {
-      return $http.get($rootScope.endPoint + '/language/' + language.toLowerCase() + '/delete')
+      return $http.get($rootScope.endPoint + '/language/' + language + '/delete')
     },
 
     addGroup: function (groupName, languages, levels) {

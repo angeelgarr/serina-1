@@ -30,7 +30,7 @@ let deleteLanguage = (res, languageCode) => {
 }
 
 moduleLanguages.isValidLanguageCode = (languageCode) => {
-  return typeof languageCode === 'string' && languageCode.length === 2
+  return typeof languageCode === 'string' && languageCode.length === 5
 }
 
 moduleLanguages.countTranslations = (obj) => {
@@ -57,7 +57,7 @@ moduleLanguages.get(constants.PATH_API + '/languages', (req, res) => {
 
   files.forEach((fileName) => {
     let content = jsonfile.readFileSync(constants.PATH_JSON_FOLDER + '/' + fileName)
-    languages.push({ code: fileName.substring(0, 2), nbTranslations: moduleLanguages.countTranslations(content) })
+    languages.push({ code: fileName.replace('.json', ''), nbTranslations: moduleLanguages.countTranslations(content) })
   })
   res.send(languages)
 })
@@ -75,7 +75,7 @@ moduleLanguages.get(constants.PATH_API + '/language/:code/:action', (req, res) =
         deleteLanguage(res, languageCode)
         break
       case 'download':
-        res.setHeader('Content-Type', 'apilication/json')
+        res.setHeader('Content-Type', 'application/json')
         res.download(constants.PATH_JSON_FOLDER + '/' + languageCode + '.json')
         break
       case 'open':

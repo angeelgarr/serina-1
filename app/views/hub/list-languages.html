@@ -2,7 +2,7 @@
     <md-card ng-repeat="language in listLanguages track by language.code">
         <md-card-title>
             <md-card-title-text>
-                <span class="md-headline">{{'commons.translation' | i18next}} : {{language.code | uppercase}}</span>
+                <span class="md-headline">{{'commons.translation' | i18next}} : {{language.code}}</span>
                 <span class="md-subhead">{{'commons.format' | i18next}} : i18next</span>
                 <span class="md-subhead">{{language.nbTranslations}} <span ng-i18next="[i18next]({ count: language.nbTranslations})commons.translation" class="lowercase"></span></span>
             </md-card-title-text>
@@ -31,7 +31,7 @@
     <div class="md-whiteframe-2dp">
         <md-subheader ng-if="listLanguages.length > 0"><span ng-i18next="[i18next]({ count: listLanguages.length})commons.language"></span></md-subheader>
         <md-list-item ng-repeat="language in listLanguages track by language.code" ng-click="openLanguage(language.code)">
-            <img ng-src="images/flags/{{language.code}}.png" alt="Flag {{language.code}}" class="flag"/> <span>{{language.code | uppercase}}</span>
+            <img ng-src="images/flags/{{language.code}}.png" alt="Flag {{language.code}}" class="flag"/> <span>{{language.code}}</span>
             <span flex></span>
             <span>{{language.nbTranslations}} <span ng-i18next="[i18next]({ count: language.nbTranslations})commons.translation" class="lowercase"></span></span>
             <btn-download-language locale="language.code"></btn-download-language>

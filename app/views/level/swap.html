@@ -13,7 +13,7 @@
                     <md-icon>flag</md-icon>
                     <md-select ng-model="secondLanguage">
                         <md-option ng-repeat="language in languagesForSwap track by $index" ng-value="language.code" ng-click="selectSecondLanguage(language.code)" ng-selected="secondLanguage === language.code">
-                            {{language.code | uppercase}}
+                            {{language.code}}
                         </md-option>
                     </md-select>
                 </md-input-container>

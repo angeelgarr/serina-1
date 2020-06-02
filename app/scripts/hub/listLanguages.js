@@ -27,7 +27,7 @@ angular.module('serinaApp').directive('listLanguages', function ($rootScope, $lo
       }
 
       scope.openLanguage = function (language) {
-        $location.path('/language/' + language.toLowerCase())
+        $location.path('/language/' + language)
       }
 
       scope.getLanguages()

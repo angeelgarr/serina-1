@@ -20,6 +20,10 @@ body.md-toast-animating { overflow: auto !important; }
   line-height: .8;
 }
 
+.md-button {
+  text-transform: none;
+}
+
 md-list-item, .md-subheader {
   background-color: $white;
 }

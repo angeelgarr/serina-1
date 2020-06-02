@@ -7,7 +7,7 @@ angular.module('serinaApp').directive('addLanguage', function ($i18next, DataAcc
     link: function (scope) {
 
       scope.addLanguage = function () {
-        var codeLanguageAdd = scope.addLanguage.code.toLowerCase()
+        var codeLanguageAdd = scope.addLanguage.code
         var languageNotExist = true
         angular.forEach(scope.listLanguages, function (language) {
           if (language === codeLanguageAdd) {
@@ -22,7 +22,7 @@ angular.module('serinaApp').directive('addLanguage', function ($i18next, DataAcc
             scope.getLanguages()
           }, function (response) {
             Toast.showCustomToast('warning', $i18next.t('commons.toast.addLanguage.fail', { language: codeLanguageAdd }), 'fail', 'HubCtrl')
-            console.error('Unable to add language "' + codeLanguageAdd.toUpperCase() + '"', response)
+            console.error('Unable to add language "' + codeLanguageAdd + '"', response)
           })
         } else {
           Toast.showCustomToast('info_outline', $i18next.t('commons.toast.addLanguage.langExist', { language: codeLanguageAdd }), 'medium', 'HubCtrl')

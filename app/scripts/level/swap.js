@@ -68,7 +68,7 @@ angular.module('serinaApp').directive('swap', function ($location, $rootScope, $
           $rootScope.secondLanguageIsValid = true
           scope.languages.push($rootScope.secondLanguage)
           angular.copy(scope.listTranslations, scope.originalListTranslations)
-          $rootScope.breadcrumb[0].label = scope.languages[0].toUpperCase() + ' / ' + scope.languages[1].toUpperCase()
+          $rootScope.breadcrumb[0].label = scope.languages[0] + ' / ' + scope.languages[1]
         }, function (response) {
           console.error('Error on open second language ' + $rootScope.secondLanguage, response)
         })

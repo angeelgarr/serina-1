@@ -2,7 +2,7 @@
     <div class="md-whiteframe-2dp">
         <md-subheader ng-if="listLanguages.length > 0"><span ng-i18next="[i18next]({ count: listLanguages.length})commons.language"></span></md-subheader>
         <md-list-item ng-repeat="language in listLanguages track by language.code" ng-click="previewLanguage(language.code)">
-            <p><img ng-src="images/flags/{{language.code}}.png" alt="Flag {{language.code}}" class="flag"/><span>{{language.code | uppercase}}</span></p>
+            <p><img ng-src="images/flags/{{language.code}}.png" alt="Flag {{language.code}}" class="flag"/><span>{{language.code}}</span></p>
 
             <btn-download-language locale="language.code"></btn-download-language>
 

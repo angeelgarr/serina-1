@@ -14,9 +14,9 @@ angular.module('serinaApp').component('basicSettings', {
     }
 
     this.languages = [
-      { code: 'en' },
-      { code: 'es' },
-      { code: 'fr' }
+      { code: 'en-US' },
+      { code: 'es-ES' },
+      { code: 'fr-FR' }
     ]
 
     this.changeLocaleOfApplication = function (language) {

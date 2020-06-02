@@ -100,7 +100,7 @@ angular
       $rootScope.settings = {
         customTranslationsPath: false,
         keepLanguagesEdit: false,
-        locale: 'en',
+        locale: 'en-US',
         theme: 'green',
         selectedDisplayFormat: 'card',
       }
@@ -111,16 +111,16 @@ angular
 
     window.i18next.init({
       debug: false,
-      lng: $rootScope.settings.locale, // If not given, i18n will detect the browser language.
-      fallbackLng: '', // Default is dev
+      lng: $rootScope.settings.locale,
+      fallbackLng: '',
       backend: {
-        loadPath: '../app/locales/{{lng}}/translation.json'
+        loadPath: '../app/locales/' + $rootScope.settings.locale + '.json'
       },
       useCookie: false,
       useLocalStorage: false,
       initImmediate: false
     }, function (err) {
-      if (err) { console.error('unable to load translation', err) }
+      if (err) { console.error('Unable to load translation', err) }
       console.log('Translation loaded')
     })
 
