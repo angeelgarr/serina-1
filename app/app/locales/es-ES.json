@@ -123,7 +123,14 @@
         "selectLanguage": "Seleccione un idioma",
         "theming": "Tema de aplicación",
         "title": "Parámetros básicos",
-        "keepLanguagesBeingEditedWhenChangingPages": "Mantener los idiomas que se están editando al cambiar de página"
+        "keepLanguagesBeingEditedWhenChangingPages": "Mantener los idiomas que se están editando al cambiar de página",
+        "list": "Listado",
+        "card": "Mapa"
+      },
+      "languages": {
+        "en-US": "Inglés",
+        "es-ES": "Español",
+        "fr-FR": "francés"
       }
     }
   },

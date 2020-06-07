@@ -19,7 +19,14 @@
         "selectLanguage": "Choice language",
         "theming": "Theming",
         "choiceTheme": "Choice theme",
-        "keepLanguagesBeingEditedWhenChangingPages": "Keep the languages being edited when changing pages"
+        "keepLanguagesBeingEditedWhenChangingPages": "Keep the languages being edited when changing pages",
+        "list": "List",
+        "card": "Card"
+      },
+      "languages": {
+        "en-US": "English",
+        "es-ES": "Spanish",
+        "fr-FR": "French"
       },
       "shortcuts": {
         "keyboardShortcuts": "Keyboard shortcuts",

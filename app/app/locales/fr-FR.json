@@ -19,7 +19,14 @@
         "selectLanguage": "Choisis une langue",
         "theming": "Thème de l'application",
         "choiceTheme": "Choisir un thème",
-        "keepLanguagesBeingEditedWhenChangingPages": "Garder les langues en cours d'édition lors du changement de page"
+        "keepLanguagesBeingEditedWhenChangingPages": "Garder les langues en cours d'édition lors du changement de page",
+        "list": "Liste",
+        "card": "Carte"
+      },
+      "languages": {
+        "en-US": "Anglais",
+        "es-ES": "Espagnol",
+        "fr-FR": "Français"
       },
       "shortcuts": {
         "keyboardShortcuts": "Raccourcis clavier",
