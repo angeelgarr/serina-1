@@ -54,6 +54,15 @@ angular.module('serinaApp').directive('translations', function ($rootScope, $rou
         translationCopy = null
       }
 
+      scope.generatePluralTranslation = function (ev, originalTranslation) {
+        var translationCopy = angular.copy(originalTranslation)
+        translationCopy.key += '_plural'
+        translationCopy.save = false
+        translationCopy.modified = false
+        scope.listTranslations.unshift(translationCopy)
+        translationCopy = null
+      }
+
       scope.sendTranslation = function (ev, translation) {
         ev.stopPropagation()
         if (!translation.save) {

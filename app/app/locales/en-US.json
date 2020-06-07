@@ -50,6 +50,7 @@
       "delete": "Delete",
       "download": "Download",
       "edit": "Edit",
+      "generatePlural": "Generate plural",
       "import": "Import",
       "return": "Return",
       "previous": "Previous",

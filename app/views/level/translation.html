@@ -17,6 +17,11 @@
                 <md-icon>content_copy</md-icon>
             </md-button>
 
+            <md-button class="md-icon-button" ng-click="generatePluralTranslation($event, translation)" ng-if="translation.save" ng-disabled="!translation.save || translation.modified">
+                <md-tooltip md-direction="bottom">{{'commons.actions.generatePlural' | i18next}}</md-tooltip>
+                <md-icon>plus_one</md-icon>
+            </md-button>
+
             <md-button class="md-icon-button md-hue-3 md-warn" ng-click="deleteTranslation($event, translation)">
                 <md-tooltip md-direction="bottom">{{'commons.actions.delete' | i18next}}</md-tooltip>
                 <md-icon>delete</md-icon>
