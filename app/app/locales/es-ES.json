@@ -115,7 +115,7 @@
         "folderPath": "Ruta de la carpeta"
       },
       "basic": {
-        "choiceDisplayFormatOfLanguages": "Elección del formato de pantalla en el hub",
+        "choiceDisplayFormatOfLanguages": "Elección del formato de visualización para la lista de idiomas.",
         "choiceLanguageOfApp": "Elección del idioma de aplicación",
         "choiceTheme": "Elija un tema",
         "selectDisplayFormat": "Elija un formato",

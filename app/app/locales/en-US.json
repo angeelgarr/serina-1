@@ -13,7 +13,7 @@
     "settings": {
       "basic": {
         "title": "Basic settings",
-        "choiceDisplayFormatOfLanguages": "Choice display format of languages on hub",
+        "choiceDisplayFormatOfLanguages": "Choice of display format for the list of languages",
         "selectDisplayFormat": "Choice format",
         "choiceLanguageOfApp": "Choice language of application",
         "selectLanguage": "Choice language",
