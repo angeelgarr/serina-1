@@ -1,14 +1,22 @@
 {
   "commons": {
+    "home": "Inicio",
+    "menu": "Menú",
     "actions": {
       "add": "Añadir",
+      "copy": "Copiar",
       "cancel": "Anulador",
       "delete": "Borrar",
       "download": "Descargar ahora",
       "edit": "Editar",
       "import": "Importación",
       "return": "Regreso",
-      "validate": "Confirmar"
+      "previous": "Anterior",
+      "next": "Próximo",
+      "validate": "Confirmar",
+      "search": "Buscar",
+      "swap": "Intercambiar",
+      "save": "Salvar"
     },
     "matchingElement": "elemento coincidente",
     "matchingElement_plural": "elementos coincidentes",

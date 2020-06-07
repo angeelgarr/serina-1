@@ -1,7 +1,8 @@
 <md-card layout="row">
     <md-subheader><span ng-i18next="[i18next]({ count: listTranslations.length})commons.translation"></span></md-subheader>
     <span flex></span>
-    <md-button ng-click="addTranslation()" class="md-primary md-raised">
+    <md-button class="md-primary md-fab md-mini md-raised" ng-click="addTranslation()">
+        <md-tooltip md-direction="bottom">{{'commons.actions.add' | i18next}}</md-tooltip>
         <md-icon>add</md-icon>
     </md-button>
 </md-card>

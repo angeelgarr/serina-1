@@ -41,15 +41,23 @@
     }
   },
   "commons": {
+    "home": "Accueil",
+    "menu": "Menu",
     "actions": {
       "add": "Ajouter",
+      "cancel": "Annuler",
+      "copy": "Copier",
       "delete": "Supprimer",
       "download": "Télécharger",
       "edit": "Editer",
       "import": "Importer",
       "return": "Retour",
+      "previous": "Précédent",
+      "next": "Suivant",
       "validate": "Valider",
-      "cancel": "Annuler"
+      "search": "Rechercher",
+      "swap": "Echanger",
+      "save": "Enregistrer"
     },
     "themeColor": {
       "brown": "Marron",

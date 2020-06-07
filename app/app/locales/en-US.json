@@ -41,15 +41,23 @@
     }
   },
   "commons": {
+    "home": "Home",
+    "menu": "Menu",
     "actions": {
       "add": "Add",
+      "cancel": "Cancel",
+      "copy": "Copy",
       "delete": "Delete",
       "download": "Download",
       "edit": "Edit",
       "import": "Import",
       "return": "Return",
+      "previous": "Previous",
+      "next": "Next",
       "validate": "Validate",
-      "cancel": "Cancel"
+      "search": "Search",
+      "swap": "Swap",
+      "save": "Save"
     },
     "themeColor": {
       "brown": "Brown",

@@ -18,9 +18,11 @@
             <span flex></span>
 
             <md-button ng-click="openLanguage(language.code)" class="md-raised md-primary">
+                <md-tooltip md-direction="bottom">{{'commons.actions.edit' | i18next}}</md-tooltip>
                 <md-icon>edit</md-icon> {{'commons.actions.edit' | i18next}}
             </md-button>
             <md-button ng-click="deleteLanguage($event, language.code)" class="md-raised md-warn">
+                <md-tooltip md-direction="bottom">{{'commons.actions.delete' | i18next}}</md-tooltip>
                 <md-icon>delete</md-icon> {{'commons.actions.delete' | i18next}}
             </md-button>
         </md-card-actions>
@@ -35,7 +37,10 @@
             <span flex></span>
             <span>{{language.nbTranslations}} <span ng-i18next="[i18next]({ count: language.nbTranslations})commons.translation" class="lowercase"></span></span>
             <btn-download-language locale="language.code"></btn-download-language>
-            <md-button ng-click="deleteLanguage($event, language.code)" class="md-warn md-icon-button"><md-icon>delete</md-icon></md-button>
+            <md-button ng-click="deleteLanguage($event, language.code)" class="md-warn md-icon-button">
+                <md-tooltip md-direction="bottom">{{'commons.actions.delete' | i18next}}</md-tooltip>
+                <md-icon>delete</md-icon>
+            </md-button>
         </md-list-item>
     </div>
 </md-list>

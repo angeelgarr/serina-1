@@ -23,6 +23,7 @@
             <div layout="column" layout-align="center end" class="swap-languages">
                 <div flex="10">
                     <md-button class="md-icon-button md-primary" ng-disabled="disabledSwap" ng-click="swapLanguages()">
+                        <md-tooltip md-direction="bottom">{{'commons.actions.swap' | i18next}}</md-tooltip>
                         <md-icon>compare_arrows</md-icon>
                     </md-button>
                 </div>
