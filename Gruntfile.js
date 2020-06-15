@@ -16,8 +16,7 @@ module.exports = function (grunt) {
   // Automatically load required Grunt tasks
   require('jit-grunt')(grunt, {
     useminPrepare: 'grunt-usemin',
-    ngtemplates: 'grunt-angular-templates',
-    cdnify: 'grunt-google-cdn'
+    ngtemplates: 'grunt-angular-templates'
   });
 
   // Configurable paths for the application
@@ -404,13 +403,6 @@ module.exports = function (grunt) {
       }
     },
 
-    // Replace Google CDN references
-    cdnify: {
-      dist: {
-        html: ['<%= yeoman.dist %>/*.html']
-      }
-    },
-
     // Copies remaining files to places other tasks can use
     copy: {
       dist: {
@@ -423,7 +415,7 @@ module.exports = function (grunt) {
             '*.{ico,png,txt}',
             '*.html',
             'images/{,*/}*.{webp}',
-            'icons/icon-x64.ico',
+            'icons/**',
             'views/fonts/{,*/}*.*',
             'package.json'
           ]
@@ -483,10 +475,12 @@ module.exports = function (grunt) {
             'raw-body/**',
             'send/**',
             'safe-buffer/**',
+            'safer-buffer/**',
             'serve-static/**',
             'setprototypeof/**',
             'statuses/**',
             'type-is/**',
+            'toidentifier/**',
             'unpipe/**',
             'utils-merge/**',
             'vary/**'
@@ -532,7 +526,7 @@ module.exports = function (grunt) {
           name: 'serina',
           dir: 'dist',
           out: 'packages',
-          electronVersion: '1.8.2-beta.4',
+          electronVersion: '9.0.3',
           platform: 'win32',
           arch: 'x64',
           overwrite: true,
@@ -545,7 +539,7 @@ module.exports = function (grunt) {
           name: 'serina',
           dir: 'dist',
           out: 'packages',
-          electronVersion: '1.8.2-beta.4',
+          electronVersion: '9.0.3',
           platform: 'linux',
           arch: 'x64',
           overwrite: true,
@@ -558,7 +552,7 @@ module.exports = function (grunt) {
           name: 'serina',
           dir: 'dist',
           out: 'packages',
-          electronVersion: '1.8.2-beta.4',
+          electronVersion: '9.0.3',
           platform: 'darwin',
           arch: 'x64',
           overwrite: true,
@@ -618,7 +612,6 @@ module.exports = function (grunt) {
     'concat',
     'ngAnnotate',
     'copy:dist',
-    'cdnify',
     'cssmin',
     'uglify',
     'filerev',
