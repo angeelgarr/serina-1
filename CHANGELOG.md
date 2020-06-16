@@ -1,14 +1,24 @@
 # R0.3 Comming soon
 
+- Refactor flags systems
+- Refactor multi-language support (ex: en-US, fr-FR, ..)
 - Add preview for json files
 - Migration from Bower to Yarn
 - Convert commons directives to components
 - Added more shortcuts in package.json
 - Maj dependencies :
-  - Electron version (1.7.9 -> 1.8.7)
+  - Electron version (1.7.9 -> 9.0.3)
   - AngularJS version (1.6.8 -> 1.7.5)
 - Fix : Problem with count translation return 0 when the files are not empty
 
+
+# [R0.2.4](https://github.com/ORN-Fox/serina-1/releases/tag/R0.2.4) (2020-06-15)
+
+- Update Electron to 9x
+- Fix : Crash on opening app on Mac OS #1
+
+
+# After this message is oldest release on older repository
 
 # [R0.2.3](https://github.com/foxdog05000/serina/releases/tag/R0.2.3) (2018-05-17)
 
@@ -18,7 +28,6 @@
 
 
 # [R0.2.2](https://github.com/foxdog05000/serina/releases/tag/R0.2.2) (2018-02-16)
-
 
 - Added code for the language swap button
 - Added rel="noopener" on links \_blank for security and performance

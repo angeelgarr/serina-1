@@ -3,6 +3,7 @@ const electron = require('electron')
 const app = electron.app
 // Module to create native browser window.
 const BrowserWindow = electron.BrowserWindow
+const Tray = electron.Tray
 
 // Path is declared in api.js and not here. The api.js file is concatenated at the beginning of this file when building the application.
 // const path = require('path')
@@ -11,15 +12,19 @@ const url = require('url')
 // Keep a global reference of the window object, if you don't, the window will
 // be closed automatically when the JavaScript object is garbage collected.
 let mainWindow
+let appIcon
 
 function createWindow () {
+  appIcon = new Tray(path.join(__dirname, '/icons/icon-x64.png'));
+
   // Create the browser window.
   mainWindow = new BrowserWindow({
     minWidth: 800,
     minHeight: 600,
     width: 1366,
     height: 768,
-    icon: path.join(__dirname, '/icons/icon-x64.ico')
+    icon: path.join(__dirname, '/icons/icon-x64.png'),
+    titleBarStyle: 'hidden'
   })
 
   // and load the index.html of the app.
@@ -41,24 +46,12 @@ function createWindow () {
   })
 }
 
-const isSecondInstance = app.makeSingleInstance((commandLine, workingDirectory) => {
-  // Someone tried to run a second instance, we should focus our window.
-  if (mainWindow) {
-    if (mainWindow.isMinimized()) {
-      mainWindow.restore()
-    }
-    mainWindow.focus()
-  }
-})
-
-if (isSecondInstance) {
-  app.quit()
-}
+app.requestSingleInstanceLock()
 
 // This method will be called when Electron has finished
 // initialization and is ready to create browser windows.
 // Some APIs can only be used after this event occurs.
-app.on('ready', createWindow)
+app.whenReady().then(createWindow)
 
 // Quit when all windows are closed.
 app.on('window-all-closed', function () {

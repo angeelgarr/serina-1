@@ -16,8 +16,7 @@ module.exports = function (grunt) {
   // Automatically load required Grunt tasks
   require('jit-grunt')(grunt, {
     useminPrepare: 'grunt-usemin',
-    ngtemplates: 'grunt-angular-templates',
-    cdnify: 'grunt-google-cdn'
+    ngtemplates: 'grunt-angular-templates'
   });
 
   // Configurable paths for the application
@@ -370,13 +369,6 @@ module.exports = function (grunt) {
       }
     },
 
-    // Replace Google CDN references
-    cdnify: {
-      dist: {
-        html: ['<%= yeoman.dist %>/*.html']
-      }
-    },
-
     // Copies remaining files to places other tasks can use
     copy: {
       dist: {
@@ -390,7 +382,7 @@ module.exports = function (grunt) {
             '*.html',
             'app/locales/*',
             'images/{,*/}*.{webp}',
-            'icons/icon-x64.ico',
+            'icons/**',
             'views/fonts/{,*/}*.*',
             'package.json'
           ]
@@ -461,6 +453,7 @@ module.exports = function (grunt) {
             'statuses/**',
             'svg-country-flags/**',
             'type-is/**',
+            'toidentifier/**',
             'unpipe/**',
             'utils-merge/**',
             'vary/**'
