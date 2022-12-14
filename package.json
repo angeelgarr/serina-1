@@ -21,7 +21,7 @@
   "homepage": "https://github.com/ORN-Fox/serina-1#readme",
   "dependencies": {
     "body-parser": "^1.17.1",
-    "express": "^4.15.2",
+    "express": "^4.17.3",
     "jsonfile": "^2.4.0",
     "natives": "^1.1.6"
   },
